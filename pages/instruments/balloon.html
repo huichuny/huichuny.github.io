@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>balloon - huichun yang</title>
+  <base href="/" />
+  <link rel="stylesheet" href="../../style.css" />
+</head>
+<body>
+
+<nav id="navbar"></nav>
+
+<main>
+ 
+  <section>
+ 	 <h2>breath, void, ground (MFA thesis project) 2025 </h2>
+ 	 <p>its my thesis project for MFA degree in Digital Media at RISD. i can write for this forever, but here is my thesis paper, basically have everything i thought and met during that days. <a href="https://digitalcommons.risd.edu/masterstheses/1366/" target="_blank">download my thesis</a></p>
+	 
+	 <div class = "video-container">
+		 <iframe src="https://www.youtube.com/embed/HxiZ5Nh1wOE?si=PM4OyTTx5d6SABcR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	</div>
+  </section>
+
+
+  <section>
+  	<h2>Non-Event @ First Church in Jamaica Plain, May 16 2025</h2>
+ 	 <p>i have to say i am so lucky that my set at pity polar with femi was seen by Chris, so that i was invited to play a Non-Event series, and got the chance to meet Laura Cocks, who is the most amazing flutist i've ever heard. i can never forget that Laura said to me: we address our breath in different ways...balloon is like a geographical site that you give access to people to witness your struggle and vulnerability....and we both stopped talking because we're gonna cry. it was a beautiful night. </p>
+  
+	 <div class = "video-container">
+	 	<iframe src="https://www.youtube.com/embed/3Al1x2xUsVA?si=edNLFNoKBtd96LWD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	</div>
+
+  </section>
+
+
+  <section>
+	  <h2>Residual Noise @ RISD SRST, April 5 2025</h2>
+	  <p>i played balloon with 29 channels ambisonic deme shpae speaker arrays at RISD's Studio for Research in Sound and Technology. the sound in the space, or the space shaped by the sound is so alive, all of the movement is right here. sometimes you can not ignore the power of good quality technology supported by academia that are sometime not align with the idea of diy community. i think it is nice to be in both group and be in the in-between. </p>
+
+	 <div class = "video-container">
+	 	<iframe src="https://www.youtube.com/embed/-7uXzcR_mQw?si=-KRNq3irB9_QW3aj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	  </div>
+
+  </section>
+
+  <section>
+	  <h2>oreo cookie therapy @ pity parlor, March 2 2025</h2>
+	  <p>femi and i played our first set at pity parlor. its an life changing experience.</p>
+	  <img src="../pics/octpp.JPG">
+  </section>
+</main>
+
+
+
+<script>
+  fetch('../_includes/nav.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('navbar').innerHTML = html;
+    });
+</script>
+
+<div id="footer"></div>
+
+<script>
+  fetch('_includes/footer.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('footer').innerHTML = html;
+    });
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>balloon - huichun yang</title>
+  <base href="/" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+<nav id="navbar"></nav>
+
+<main>
+	<p>I think I'm gonna put a github repo link here soon! Or just email me if you really wanna chat! </p> 
+
+</main>
+
+
+
+<script>
+  fetch('../_includes/nav.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('navbar').innerHTML = html;
+    });
+</script>
+
+<div id="footer"></div>
+
+<script>
+  fetch('_includes/footer.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('footer').innerHTML = html;
+    });
+</script>
+
+
+
+
+</body>
+</html>

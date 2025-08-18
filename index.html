@@ -1,35 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>huichunyang</title>
-    </head>
-<style>
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
+  <title>home - huichun yang</title>
+  <base href="/" >
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-body {
-color: white;
-background-image:url('pics/ilm.png');
-}
 
-.oreos {
-width: 900px;
-background-image:url('pics/oct.png');
-margin: 20px;
-padding: 20px;
-}
+<nav id="navbar"></nav>
 
-</style>
-    <body>
-	    <marquee>i love music!!!!!!!!!!!</marquee>
-	<a href="pages/notebook.html">Go to Notebook</a>
-        <h1>This is my personal webstie! ooooo!</h1>
-	<p>I poop a lot, that's why.</p>
-	<a href="https://knowyourmeme.com/memes/i-eat-kids" target="_blank"><img src="pics/iek.jpg"></a><br>
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/hm3prfJp3rw?si=RtsteueeBJhMmj3K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-	<audio controls>
-		<source src="sound/washingtondc.mp3">
-	</audio>
-	<div class="oreos">
-		<p>Recent research has identified a unique population of 'Lean Mass Hyper-Responders' <a href="https://www.sohu.com/a/662905455_121492536">(LMHR)</a> who exhibit increases in LDL cholesterol (LDL-C) in response to carbohydrate-restricted diets to levels ≥ 200 mg/dL, in association with HDL cholesterol ≥ 80 mg/dL and triglycerides ≤ 70 mg/dL. This triad of markers occurs primarily in lean metabolically healthy subjects, with the magnitude of increase in LDL-C inversely associated with body mass index. The lipid energy model has been proposed as one explanation for LMHR phenotype and posits that there is increased export and subsequent turnover of VLDL to LDL particles to meet systemic energy needs in the setting of hepatic glycogen depletion and low body fat. This single subject crossover experiment aimed to test the hypothesis that adding carbohydrates, in the form of Oreo cookies, to an LMHR subject on a ketogenic diet would reduce LDL-C levels by a similar, or greater, magnitude than high-intensity statin therapy. The study was designed as follows: after a 2-week run-in period on a standardized ketogenic diet, study arm 1 consisted of supplementation with 12 regular Oreo cookies, providing 100 g/d of additional carbohydrates for 16 days. Throughout this arm, ketosis was monitored and maintained at levels similar to the subject's standard ketogenic diet using supplemental exogenous d-β-hydroxybutyrate supplementation four times daily. Following the discontinuation of Oreo supplementation, the subject maintained a stable ketogenic diet for 3 months and documented a return to baseline weight and hypercholesterolemic status. During study arm 2, the subject received rosuvastatin 20 mg daily for 6 weeks. Lipid panels were drawn water-only fasted and weekly throughout the study. Baseline LDL-C was 384 mg/dL and reduced to 111 mg/dL (71% reduction) after Oreo supplementation. Following the washout period, LDL-C returned to 421 mg/dL, and was reduced to a nadir of 284 mg/dL with 20 mg rosuvastatin therapy (32.5% reduction). In conclusion, in this case study experiment, short-term Oreo supplementation lowered LDL-C more than 6 weeks of high-intensity statin therapy in an LMHR subject on a ketogenic diet. This dramatic metabolic demonstration, consistent with the lipid energy model, should provoke further research and not be seen as health advice.</p>
-	</div>
-    </body>
+<main>
+       
+<div class="gallery">
+  <img id="randomPhoto" alt="Random Photo">
+</div>
+
+
+<section>
+	<h1>next</h1>
+ 	<p>
+  Oreo Cookie Therapy (duo with sadnoise), Lost Bag, Providence, RI, August 10 2025<br>
+  Oreo Cookie Therapy (duo with sadnoise), Cold Spring Hollow, Belchertown, MA, August 8, 2025<br>
+  Tuxedo Fest, Olneyville, Providence, RI, August 02 2025<br>
+  	</p> 
+</section>
+
+  <section>
+  	<h1>archive</h1>
+ 	<p>
+ 	 2025	Contact Improvisation Jam, Open Arts Studio in Dumbo, New York, NY<br>
+ 	 2025	International Computer Music Conference, Boston, MA<br>
+ 	 2025	Non-Event Concert Series, Non-Event, Boston, MA<br>
+ 	 2025	Residual Noise, Brown Arts Institute & RISD SRST, Providence, RI<br>
+ 	 2024	SOUND/IMAGE Festival, University of Greenwich, London, England<br>
+	  </p>
+  </section>
+
+</main>
+
+
+<script>
+  // Load nav.html into the nav#navbar element
+  fetch('_includes/nav.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('navbar').innerHTML = html;
+    });
+</script>
+<div id="footer"></div>
+
+<script>
+  fetch('_includes/footer.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('footer').innerHTML = html;
+    });
+</script>  
+
+<script>
+  // List of your photo paths
+  const photos = [
+"pics/artist/alg.png",
+"pics/artist/cat.png",
+"pics/artist/dax.png",
+"pics/artist/los.png",
+"pics/artist/nim.png",
+"pics/artist/pit.jpg",
+"pics/artist/res.png",
+"pics/artist/sol.png",
+"pics/artist/the.jpg",
+"pics/artist/tux.png"
+
+
+
+  ];
+
+ // Get last photo from localStorage
+  const lastPhoto = localStorage.getItem("lastPhoto");
+
+  // Filter out last photo from choices
+  let availablePhotos = photos.filter(photo => photo !== lastPhoto);
+
+  // If all filtered out (only 1 photo in list), reset availablePhotos
+  if (availablePhotos.length === 0) {
+    availablePhotos = photos;
+  }
+
+  // Pick a random one
+  const randomIndex = Math.floor(Math.random() * availablePhotos.length);
+  const randomPhoto = availablePhotos[randomIndex];
+
+  // Update the image source
+  document.getElementById("randomPhoto").src = randomPhoto;
+
+  // Save this as the last shown photo
+  localStorage.setItem("lastPhoto", randomPhoto);
+</script>
+
+
+
+</body>
 </html>
+

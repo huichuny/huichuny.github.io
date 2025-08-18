@@ -1,0 +1,177 @@
+:root {
+  --content-max-width: 650px; /* change this once, affects all content widths */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: white;
+  background-color: black;
+  padding: 1.5rem;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('pics/balloon00.jpg') no-repeat center center/cover;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: #999966;
+}
+
+nav{
+   display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0.25rem 0rem; 
+
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0; 
+}
+
+nav li {
+  position: relative;
+}
+
+nav a {                 
+  display: block;
+  padding: 0.25rem 0;          /* no horizontal padding so text edge = left edge */
+}
+
+
+nav .dropdown-content {
+  display: none;
+  position: absolute;
+  top: calc(100%);   /* right below the label */
+  left: 0;                     /* align left edge with “Sound” text */
+  margin: 0;
+  padding: 0.25rem 0;
+  list-style: none;
+
+  z-index: 1000;
+  min-width: max-content;  
+
+}
+
+nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+nav .dropdown-content a {
+  display: block;
+  padding: 0.25rem 0rem;
+  white-space: nowrap;
+}
+
+
+main {
+  flex: 1; /* makes main take up remaining space */
+  margin: 2rem 0;
+  max-width: var(--content-max-width);
+}
+
+main section{
+margin-top:50px;
+}
+
+main article{
+margin-top:50px;
+}
+
+main img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem 0;
+}
+
+p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  max-width: var(--content-max-width);
+}
+
+#footer footer {
+  border-top: 1px solid white;
+  padding: 2rem 0rem;
+  display: flex;
+  justify-content: space-between; /* social left, copyright right */
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+#footer p {
+  margin: 0;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: var(--content-max-width);
+  aspect-ratio: 16 / 9;
+  margin: 1rem 0;
+}
+
+.video-container iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem 0;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

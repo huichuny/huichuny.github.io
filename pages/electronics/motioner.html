@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>balloon - huichun yang</title>
+  <base href="/" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+<nav id="navbar"></nav>
+
+<main>
+ 
+  <section>
+ 	 <h2>Glove wirelessly controls the ambisonic signal of IEM plugin in MaxMSP.</h2>
+	 
+	 <div class = "video-container">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/KOYH5-06kFo?si=0sh27Kzrfm9ZuPLY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	</div>
+	
+	<p>This project uses
+                <ul>
+                        <li>ESP32</li>
+                        <li>MPU6050</li>
+			<li>3.7v Battery</li>
+			<li>TP-Link Wi-Fi Router</li>
+		</ul>
+        </p>
+	<p>The ESP32, wifi router, and my computer are connected to the same IP address. Once they are connected, data from the MPU6050, which is a 3-axis gyroscope and a 3-axis accelerometer, can be sent to my Max patch and move the postion of stereo signal in the IEM plugin.  </p>
+   </section>
+   
+   <section>
+         <div class = "video-container">
+	   <iframe width="560" height="315" src="https://www.youtube.com/embed/HyzJ9_gDigs?si=7uWq_xJU0O7v-6CL&amp;start=461" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	   </div>
+	   <p>I was experiment with the duration of the balloon and different gesture with the gloves that control the spatial sound position. </p>
+   </section>
+
+
+</main>
+
+
+
+<script>
+  fetch('../_includes/nav.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('navbar').innerHTML = html;
+    });
+</script>
+
+<div id="footer"></div>
+
+<script>
+  fetch('_includes/footer.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('footer').innerHTML = html;
+    });
+</script>
+
+
+
+
+</body>
+</html>
