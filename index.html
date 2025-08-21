@@ -8,11 +8,15 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div><h1>this is the testing log</h1></div>
 
+
+<nav id="navbar"></nav>
 
 <main>
        
+<div class="gallery">
+  <img id="randomPhoto" alt="Random Photo">
+</div>
 
 
 <section>
@@ -38,10 +42,23 @@
 </main>
 
 
-
+<script>
+  // Load nav.html into the nav#navbar element
+  fetch('includes/nav.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('navbar').innerHTML = html;
+    });
+</script>
 <div id="footer"></div>
 
-
+<script>
+  fetch('includes/footer.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('footer').innerHTML = html;
+    });
+</script>  
 
 <script>
   // List of your photo paths
