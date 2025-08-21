@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>synthesizer - huichun yang</title>
+  <base href="/" />
+  <link rel="stylesheet" href="../../style.css" />
+</head>
+<body>
+
+<nav id="navbar"></nav>
+
+<main>
+ 
+  <section>
+ 	 <h1>Inspired by the Gen patch made by Cycling ’74—the Lorenz attractor example that uses the history operator for chaotic functions—the system performs its work through recursive calculations. </h1>
+	 <img src="pics/thesis/syn1.jpg" alt="modular synthesizer">
+	 <p> I took the RISD SRST course "Modular Synthesis Studio" taught by Alex Chechile. As described in the course syllabus, “In Modular Synthesis Studio, we will learn and apply concepts of voltage controlled synthesizers to creative coding and embedded computing platforms. Imbued with the spirit of community, together we will design and build a one-of-a-kind RISD modular synthesizer by semester end, while also creating new sound-based works with the system.”	 
+  </section>
+    <section>
+	    <h1>Tutorial</h1>
+	    <div class = "video-container">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/ZVdtfvnCX0o?si=Jn3bmDr8zwFZCo6U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	</div>
+  </section>
+  <section> 
+	 <img src="pics/thesis/syn3.jpg" alt="modular synthesizer">
+	 <p>This project uses
+                <ul>
+                        <li>Daisy Patch Submodule</li>
+                        <li>Serge Module</li>
+                        <li>MaxMSP Gen</li>
+                </ul>
+        </p>
+  </section>
+ 
+  <section>
+	 <img src="pics/thesis/syn6.jpg" alt="modular synthesizer">
+	 <p>Solder it on perfboard so that its easier to screw the wire and connect to daisy</p>
+  </section>
+   
+  <section>
+	 <img src="pics/thesis/syn5.jpg" alt="modular synthesizer">
+	 <p>Print out the module design on a piece of paper, stick it on the plate, and drill the hole for inserting knobs and jack. </p>
+  </section>
+
+  <section>
+	 <img src="pics/thesis/syn2.jpg" alt="modular synthesizer">
+	 <p>To make the DIY module accessible, we design a color system. Purple jack is output for CV or audio. Gray jack is CV input. Other components such as switches and knobs are control CV. </p>
+  </section>
+
+  <section>
+	 <img src="pics/thesis/syn4.jpg" alt="modular synthesizer">
+	 <p>We put together our module on a plate that fit with the case of Serge module.</p>
+  </section>
+  <section>
+	 <img src="pics/thesis/syn10.jpg" alt="modular synthesizer">
+	 <p>To observe the entanglement phenomenon, simply turn the control knob or place some psychedelic CV candy on Einstein’s tongue. Through the audio or CV output, you’ll experience the entangled world through Einstein’s eyes.
+  </section>
+  <section>
+	 <img src="pics/thesis/syn8.jpg" alt="modular synthesizer">
+	 <p>Inspired by the Gen patch made by Cycling ’74—the Lorenz attractor example that uses the history operator for chaotic functions—the system performs its work through recursive calculations. </p>
+  </section>
+  <section>
+	 <img src="pics/thesis/syn9.jpg" alt="modular synthesizer">
+	 <p>I replace the parameter inside the Gen patch with a control voltage that works in the Daisy Patch Submodule, a complete Eurorack module DSP engine. This synthesizer creates interesting waveforms that oscillate from high to low voltage, entangling with each other at every sample rate.</p>
+  </section>
+
+ 
+
+
+
+</main>
+
+
+
+<script>
+  fetch('../includes/nav.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('navbar').innerHTML = html;
+    });
+</script>
+
+<div id="footer"></div>
+
+<script>
+  fetch('includes/footer.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('footer').innerHTML = html;
+    });
+</script>
+
+
+
+
+</body>
+</html>

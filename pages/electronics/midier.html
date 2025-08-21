@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>midier - huichun yang</title>
+  <base href="/" />
+  <link rel="stylesheet" href="../../style.css" />
+</head>
+<body>
+
+<nav id="navbar"></nav>
+
+<main>
+
+  <section>
+
+	 <h1> Technology shouldn't be made to minimize human effort but to inspire us being aware of more unconscious gestures that introduce different knowledge of our body and ourselves. </h1>
+  <img src="pics/thesis/midi2.jpg" alt="diy midi controller">
+  </section>
+
+ 
+
+  <section>
+  <div class = "video-container">
+  		<iframe width="560" height="315" src="https://www.youtube.com/embed/K8YBre8J7fs?si=eoAz8dSzr2jI01dR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ 	 </div>
+	 <p>I was exploring the relationship between these electronics, my body, and the sound. I felt the rise and fall of my chest. I hear noise when I breath. I felt the pressure when I put pressure on the sensors.</p>
+   </section>
+ 
+
+
+  <section>
+                <img src="pics/thesis/midi3.jpg" alt="diy midi controller"><p>This project uses 
+		<ul>
+			<li>Teensy 4.1 Development Board</li>
+			<li>3.5mm mono audio jacks and cables</li>
+			<li>Square Force-Sensitive Resistor (FSR)</li>
+		</ul>
+	</p>
+  </section>
+ 
+
+  <section>
+                <img src="pics/thesis/midi5.jpg" alt="diy midi controller"><p>I draw donw the circuit diagram first, trying to organize and minimize the soldering path. </p>
+</section>
+
+<section>
+
+                <img src="pics/thesis/midi4.jpg" alt="diy midi controller">  <p>The pressure sensor can be too sensitive, so I hand sewed them on a piece of fabric and used Hook & Loop Fasteners to stick it with a yoga mat. </p>
+</section>
+
+<section>
+        	 <img src="pics/thesis/midi0.jpg" alt="diy midi controller"> <p>The yoga mat cushions the pressure. However, I ended up not putting pressure sensors into yoga mat because I'm lazy. I also realize I can simply smooth out the immediate change of number in my Max patch.  </p>
+
+  </section>
+
+ 
+
+  <section>
+         <h1>Touching and feeling the pressure helps my body feel grounded when performing with sensors. I want to make a midi that invites body gestures and forget the fact that it's just a digital mapping process.  </h1>
+
+         <div class = "video-container">
+		 <iframe width="560" height="315" src="https://www.youtube.com/embed/2iEOQAiRa1I?si=3ms3Did5EYFUKX19&amp;start=724" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>         
+        </div>
+        <p>I controlled the parameters in my Max patch intuitively through my feet on the midi. It invited my body to get close to the ground, focusing more on my relationship with the instrument I'm playing.</p>
+
+  </section>
+ 
+
+</main>
+
+
+
+<script>
+  fetch('../includes/nav.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('navbar').innerHTML = html;
+    });
+</script>
+
+<div id="footer"></div>
+
+<script>
+  fetch('includes/footer.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('footer').innerHTML = html;
+    });
+</script>
+
+
+
+
+</body>
+</html>
