@@ -41,7 +41,7 @@ a {
   color: DarkOliveGreen;
 }
 a:hover {
-  color: #999966;
+  color: #393541;
 }
 
 nav{
@@ -126,7 +126,7 @@ p {
 }
 
 #footer footer {
-  border-top: 1px solid black;
+  border-top: 1px solid #393541;
   padding: 2rem 0rem;
   display: flex;
   justify-content: space-between; /* social left, copyright right */
