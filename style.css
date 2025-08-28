@@ -18,7 +18,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  color: white;
+  color: #EEEDC9;
   background-color: #403F14;
   padding: 1.5rem;
   
@@ -38,10 +38,10 @@ body::before {
 
 a {
   text-decoration: none;
-  color: Olive;
+  color: #B2A8BF;
 }
 a:hover {
-  color: #999966;
+  color: #EEEDC9;
 }
 
 nav{
