@@ -18,8 +18,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  color: #EEEDC9;
-  background-color: #403F14;
+  color: black;
+  background-color: #BBBFA8;
   padding: 1.5rem;
   
 }
@@ -29,7 +29,7 @@ body::before {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
   /*background: url("pics/balloon00.jpg") no-repeat center center/cover;*/
-  background-color: #403F14;
+  background-color: Beige;
   opacity: 0.5;
   z-index: -1;
 }
@@ -38,10 +38,10 @@ body::before {
 
 a {
   text-decoration: none;
-  color: #B2A8BF;
+  color: DarkOliveGreen;
 }
 a:hover {
-  color: #EEEDC9;
+  color: #999966;
 }
 
 nav{
