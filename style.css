@@ -18,8 +18,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: Beige;
   padding: 1.5rem;
   
 }
@@ -28,7 +28,8 @@ body::before {
   content: "";
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: url("pics/balloon00.jpg") no-repeat center center/cover;
+  /*background: url("pics/balloon00.jpg") no-repeat center center/cover;*/
+  background-color: Beige;
   opacity: 0.5;
   z-index: -1;
 }
