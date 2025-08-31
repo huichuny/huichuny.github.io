@@ -177,3 +177,10 @@ p {
     transform: translateY(0);
   }
 }
+
+.logo {
+    width: 90px;
+    height: auto; /* Maintains aspect ratio */
+    transform: rotate(180deg);
+    filter: invert(20%) ;
+
