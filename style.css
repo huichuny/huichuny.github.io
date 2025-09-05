@@ -15,18 +15,12 @@
 
 }*/
 
-/** {
-  box-sizing: border-box;
-}*/
 
 body {
   display: block;
-  /*justify-content: center; */
-  /*align-items: center;     */
   min-height: 100vh;      
   max-width: 800px;
   margin: 0 auto;
-  
   color: #393541;
   background-color: #BBBFA8;
   padding: 1.5rem;
@@ -47,7 +41,7 @@ body {
 
 a {
   text-decoration: none;
-  color: DarkOliveGreen;
+  color: #666434;
 }
 a:hover {
   color: #393541;
