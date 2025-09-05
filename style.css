@@ -1,38 +1,47 @@
-:root {
-  --content-max-width: 650px; /* change this once, affects all content widths */
-}
+/*:root {
+  --content-max-width: 650px; 
+}*/
 
-*,
+/**,
 *::before,
 *::after {
   box-sizing: border-box;
-}
+}*/
 
-html, body {
+/*html, body {
   height: 100%;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-}
+
+}*/
+
+/** {
+  box-sizing: border-box;
+}*/
 
 body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  display: block;
+  /*justify-content: center; */
+  /*align-items: center;     */
+  min-height: 100vh;      
+  max-width: 800px;
+  margin: 0 auto;
+  
   color: #393541;
   background-color: #BBBFA8;
   padding: 1.5rem;
   
 }
 
-body::before {
+/*body::before {
   content: "";
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
-  /*background: url("pics/balloon00.jpg") no-repeat center center/cover;*/
+  background: url("pics/balloon00.jpg") no-repeat center center/cover;
   background-color: Beige;
   opacity: 0.5;
   z-index: -1;
-}
+}*/
 
 
 
@@ -45,10 +54,10 @@ a:hover {
 }
 
 nav{
-   display: flex;
+  display: flex;
   align-items: center;
-  gap: 2rem;
-  padding: 0.25rem 0rem; 
+  /*gap: 2rem;*/
+  padding: 0.25rem 0rem 4rem 0rem; 
 
 }
 
@@ -57,7 +66,7 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 1rem;
-  margin: 0;
+  margin-left: auto;
   padding: 0; 
 }
 
@@ -79,7 +88,6 @@ nav .dropdown-content {
   margin: 0;
   padding: 0.25rem 0;
   list-style: none;
-
   z-index: 1000;
   min-width: max-content;  
 
@@ -100,7 +108,7 @@ nav .dropdown-content a {
 
 main {
   flex: 1; /* makes main take up remaining space */
-  margin: 2rem 0;
+  margin: 2rem auto;
   max-width: var(--content-max-width);
 }
 
@@ -113,6 +121,7 @@ margin-top:50px;
 }
 
 main img {
+  width: 100vw;
   max-width: 100%;
   height: auto;
   display: block;
