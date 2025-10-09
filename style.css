@@ -14,25 +14,26 @@ a:hover {
 }
 
 nav {
-  width: 25%;
+  width: 20%;
   position: fixed;
   height: 100%;
   overflow: auto;
+  padding: 1rem;
 }
 
 nav ul {
   list-style-type: none;
   margin: 0;
-  padding: 2rem;
+  
 }
 
 nav a {
   display: block;
-  padding: 0.2rem 0.8rem;
+  padding: 0.2rem 0;
 }
 
 main {
-  margin-left: 25%;
+  margin-left: 20%;
   /*width: calc(100% - 130px);*/
   overflow-y: auto;
   padding: 2rem;
@@ -54,6 +55,11 @@ main img {
 p {
   margin-bottom: 1rem;
   line-height: 1.5;
+}
+
+h3 {
+margin: 0.2rem 0;
+
 }
 
 
@@ -119,8 +125,14 @@ p {
 }
 
 .gallery {
-  display: flex;
-  justify-content: center;*/
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  object-fit: cover;
+  margin-left:20%;
+
+  /*display: flex;*/
+  /*justify-content: center;*/
   /*margin-top: 50px;*/
 }
 
@@ -128,9 +140,11 @@ p {
   width: 100%;
   height: auto;
   display: block;
-  margin: 1rem 0;
+  /*margin: 1rem 0;*/
   opacity: 0;
   animation: fadeIn 1s ease forwards;
+  overflow-clip-box: content-box;
+  /*overflow: clip;*/
 }
 
 @keyframes fadeIn {

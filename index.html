@@ -12,35 +12,17 @@
 
 <nav id="navbar"></nav>
 
-<main>
-       
 <div class="gallery">
   <img id="randomPhoto" alt="Random Photo">
 </div>
 
 
-<section>
-	<h1>upcoming</h1>
- 	<p> Oct 11 &ensp; @Washing Machine, Providence, RI<br>
-      Oct 18 &ensp; as Oreo Cookie Therapy @Red Ink, Providence, RI<br>
-      Oct 19 &ensp; Algotrek @ Hopkington, RI<br>
-      Oct 24 &ensp; as Oreo Cookie Therapy @Black Lace, Providence, RI
-  	</p> 
-</section>
-
-<!--   <section>
-  	<h1>archive</h1>
- 	<p>
-   2025 Experiments in Electronic Sound, CalArts, Valencia, CA. September 25 - 27<br>
- 	 2025	Contact Improvisation Jam, Open Arts Studio in Dumbo, New York, NY<br>
- 	 2025	International Computer Music Conference, Boston, MA<br>
- 	 2025	Non-Event Concert Series, Non-Event, Boston, MA<br>
- 	 2025	Residual Noise, Brown Arts Institute & RISD SRST, Providence, RI<br>
- 	 2024	SOUND/IMAGE Festival, University of Greenwich, London, England<br>
-	  </p>
-  </section> -->
+<main>
 
 </main>
+
+<!-- <div id="footer"></div> -->
+
 
 
 <script>
@@ -51,7 +33,6 @@
       document.getElementById('navbar').innerHTML = html;
     });
 </script>
-<div id="footer"></div>
 
 <script>
   fetch('includes/footer.html')
@@ -60,6 +41,7 @@
       document.getElementById('footer').innerHTML = html;
     });
 </script>  
+
 
 <script>
   // List of your photo paths
@@ -70,9 +52,6 @@
 "pics/artist/tux.png",
 "pics/bl00.jpg",
 "pics/bl06.png"
-
-
-
   ];
 
  // Get last photo from localStorage
