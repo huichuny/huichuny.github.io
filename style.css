@@ -1,14 +1,14 @@
 /*:root {
   --content-max-width: 650px; 
-}*/
+}
 
-/**,
+*,
 *::before,
 *::after {
   box-sizing: border-box;
-}*/
+}
 
-/*html, body {
+html, body {
   height: 100%;
   margin: 0 auto;
   padding: 0;
@@ -17,13 +17,13 @@
 
 
 body {
-  display: block;
-  min-height: 100vh;      
-  max-width: 800px;
-  margin: 0 auto;
-  color: #393541;
-  background-color: #A9A898;
-  padding: 1.5rem;
+  /*display: block;*/
+  height: 100vh;      
+  /*max-width: 800px;*/
+  /*margin: 0 auto;*/
+  color: #666434;
+  background-color: #141414;
+  /*padding: 1.5rem;*/
   
 }
 
@@ -33,7 +33,6 @@ body {
   top: 0; left: 0; right: 0; bottom: 0;
   background: url("pics/balloon00.jpg") no-repeat center center/cover;
   background-color: Beige;
-  opacity: 0.5;
   z-index: -1;
 }*/
 
@@ -41,44 +40,52 @@ body {
 
 a {
   text-decoration: none;
-  color: #666434;
+  color: #393541;
 }
 a:hover {
-  color: #393541;
+  color: #666434;
 }
 
 nav{
-  display: flex;
-  align-items: center;
+  /*display: flex;*/
+  /*align-items: center;*/
   /*gap: 2rem;*/
-  padding: 0.25rem 0rem 4rem 0rem; 
+  position: fixed;
+  overflow-y: auto;
+  /*padding: 0.25rem 0rem 4rem 0rem; */
 
 }
 
 
 nav ul {
   list-style: none;
-  display: flex;
+/*  display: flex;
   gap: 1rem;
   margin-left: auto;
   padding: 0; 
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;*/
 }
 
+/*
 nav li {
   position: relative;
 }
+*/
 
 nav a {                 
   display: block;
-  padding: 0.25rem 0;          /* no horizontal padding so text edge = left edge */
+  padding: 0.05rem 0;       
 }
 
 
-nav .dropdown-content {
+/*nav .dropdown-content {
   display: none;
   position: absolute;
-  top: calc(100%);   /* right below the label */
-  left: 0;                     /* align left edge with “Sound” text */
+  top: calc(100%);  
+  left: 0;               
   margin: 0;
   padding: 0.25rem 0;
   list-style: none;
@@ -99,20 +106,28 @@ nav .dropdown-content a {
   white-space: nowrap;
 }
 
+*/
+
 
 main {
-  flex: 1; /* makes main take up remaining space */
-  margin: 2rem auto;
-  max-width: var(--content-max-width);
+  flex: 1;
+  /*margin: 2rem auto;*/
+  margin-left: 20%;
+  /*max-width: var(--content-max-width);*/
+  width:60%;
+  overflow-y: auto;
+  padding: 2rem;
+
+
 }
 
 main section{
 margin-top:50px;
 }
 
-main article{
+/*main article{
 margin-top:50px;
-}
+}*/
 
 main img {
   width: 100vw;
@@ -128,14 +143,20 @@ p {
   max-width: var(--content-max-width);
 }
 
+
 #footer footer {
   border-top: 1px solid #393541;
-  padding: 2rem 0rem;
+  padding: 1rem 0rem;
   display: flex;
-  justify-content: space-between; /* social left, copyright right */
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
-  margin: 0 auto;
+  /*width: 100%;*/
+  margin: 0 2rem;
+  /*flex: 1;*/
+  /*margin-left: 260px;*/
+  /*max-width: var(--content-max-width);*/
+  /*overflow-y: auto;*/
+  color: #393541;
 }
 
 
@@ -162,7 +183,7 @@ p {
 .gallery {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  /*margin-top: 50px;*/
 }
 
 .gallery img {
@@ -185,5 +206,6 @@ p {
     width: 90px;
     height: auto; /* Maintains aspect ratio */
     transform: rotate(180deg);
-    filter: invert(20%) ;
+    filter: invert(10%) ; 
+    margin-bottom: 10px;
 
