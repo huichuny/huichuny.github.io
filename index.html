@@ -26,15 +26,6 @@
 
 
 <script>
-  // Load nav.html into the nav#navbar element
-  fetch('includes/nav.html')
-    .then(res => res.text())
-    .then(html => {
-      document.getElementById('navbar').innerHTML = html;
-    });
-</script>
-
-<script>
   fetch('includes/footer.html')
     .then(res => res.text())
     .then(html => {
@@ -76,6 +67,32 @@
   localStorage.setItem("lastPhoto", randomPhoto);
 </script>
 
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Load nav
+    fetch('includes/nav.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('navbar').innerHTML = html;
+
+        // After nav is loaded, attach toggle logic
+        const sidebar = document.querySelector('.sidebar');
+        const toggleBtn = document.querySelector('.menu-toggle');
+
+        if (toggleBtn && sidebar) {
+          toggleBtn.addEventListener('click', () => {
+            // Simple toggle (no animation)
+            if (sidebar.style.display === 'block') {
+              sidebar.style.display = 'none';
+            } else {
+              sidebar.style.display = 'block';
+            }
+          });
+        }
+      });
+  });
+</script>
 
 
 </body>
