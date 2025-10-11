@@ -58,9 +58,10 @@ nav a {
 
 main {
   margin-left: 20%;
+  margin-right: 20%;
   overflow-y: auto;
   padding: 2rem;
-  max-width: 800px;
+  max-width: 850px;
 }
 
 main section {
@@ -86,20 +87,11 @@ margin: 0.2rem 0;
 }
 
 
-#footer footer {
-  border-top: 1px solid #393541;
+footer {
   padding: 1rem 0rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 2rem;
-  color: #504C5C;
+  text-align: center;
 }
 
-
-#footer p {
-  margin: 0;
-}
 
 .video-container {
   position: relative;
@@ -150,7 +142,7 @@ margin: 0.2rem 0;
   }
 
   .menu-toggle {
-    display: block; /* show the toggle icon */
+    display: block; 
   }
 
   .logo{
@@ -165,14 +157,13 @@ margin: 0.2rem 0;
   }
 
   .gallery {
-    /*position: fixed;*/
-    /*display: block;*/
+
     top: 80px;
     left: 0;
     width: 100%;
     height: 100vh;
     margin-left: 0;
-    z-index: -1; /* below sidebar */
+    z-index: -1; 
   }
   .video-container {
     z-index: -1;
