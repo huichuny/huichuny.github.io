@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>balloon - huichun yang</title>
   <base href="/" />
-  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../../style.css" />
 </head>
 <body>
 
@@ -44,11 +44,29 @@
 
 
 <script>
-  fetch('../includes/nav.html')
-    .then(res => res.text())
-    .then(html => {
-      document.getElementById('navbar').innerHTML = html;
-    });
+  document.addEventListener('DOMContentLoaded', () => {
+    // Load nav
+    fetch('includes/nav.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('navbar').innerHTML = html;
+
+        // After nav is loaded, attach toggle logic
+        const sidebar = document.querySelector('.sidebar');
+        const toggleBtn = document.querySelector('.menu-toggle');
+
+        if (toggleBtn && sidebar) {
+          toggleBtn.addEventListener('click', () => {
+            // Simple toggle (no animation)
+            if (sidebar.style.display === 'block') {
+              sidebar.style.display = 'none';
+            } else {
+              sidebar.style.display = 'block';
+            }
+          });
+        }
+      });
+  });
 </script>
 
 <div id="footer"></div>
