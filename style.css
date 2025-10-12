@@ -133,10 +133,10 @@ footer {
 }
 
 @media (max-width: 800px) {
-  nav{
+/*  nav{
     position: relative;
     z-index: 1000;
-  }
+  }*/
 
   .sidebar {
     display: none; /* hidden by default on mobile */
