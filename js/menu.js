@@ -1,8 +1,10 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const toggleBtn = document.querySelector('.menu-toggle');
-    const sidebar = document.querySelector('.sidebar');
 
-    toggleBtn.addEventListener('click', () => {
-      sidebar.style.display = (sidebar.style.display === 'block') ? 'none' : 'block';
-    });
-});
+  document.addEventListener('DOMContentLoaded', () => {
+    const toggle = document.getElementById('menuToggle');
+    const sidebar = document.querySelector('.sidebar');
+    if (toggle && sidebar) {
+      toggle.addEventListener('click', () => {
+        sidebar.classList.toggle('active');
+      });
+    }
+  });
