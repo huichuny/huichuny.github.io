@@ -147,6 +147,12 @@ footer {
     z-index: 1001;
   }
 
+  .sidebar.active {
+  display: block;
+  }
+
+
+
   .menu-toggle {
     display: block; 
   }
@@ -171,7 +177,7 @@ footer {
     margin-left: 0;
     z-index: -1; 
   }
-  
+
   .video-container {
     z-index: -1;
   }
