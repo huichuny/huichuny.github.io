@@ -16,18 +16,22 @@ a:hover {
 }
 
 nav {
-  width: 20%;
+  /*width: 20%;*/
   position: fixed;
   height: 100%;
+  padding-right: 1rem;
+  background-color: honeydew;
+  opacity: 90%;
 }
 
 nav ul {
   list-style-type: none;  
+
 }
 
 nav a {
   display: block;
-  padding-bottom: 0.25rem;
+  
 }
 
 .menu-toggle {
@@ -36,16 +40,19 @@ nav a {
   top: 1rem;
   right: 1rem;
   z-index: 2000;
+
 }
 
 .lli {
   font-weight: bold;
   color:#393541;
+  padding-bottom: 0.25rem;
 
 }
 
 .sli{
   padding-left:2rem;
+  padding-bottom: 0.25rem;
 }
 
 .logo {
@@ -57,10 +64,11 @@ nav a {
 }
 
 main {
-  margin-left: 20%;
+  /*margin-left: 20%;*/
   overflow-y: auto;
   padding: 2rem;
   max-width: 850px;
+  margin: 0 auto;
 }
 
 main section {
@@ -111,9 +119,10 @@ footer {
 .gallery {
   position: absolute;
   height: 100%;
-  width: 80%;
+  width: 100%;
   object-fit: cover;
-  margin-left:20%;
+  /*margin-left:20%;*/
+  z-index: -1;
 }
 
 .gallery img {
@@ -130,7 +139,11 @@ footer {
 
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1170px) {
+
+  nav{
+    background-color: transparent;
+  }
 
   .sidebar {
     display: none; 
@@ -165,7 +178,7 @@ footer {
 
   main{
     padding: 1rem;
-    margin-left: 0;
+    /*margin-left: 0;*/
   }
 
   .gallery {
