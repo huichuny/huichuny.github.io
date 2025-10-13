@@ -17,20 +17,20 @@ nav {
   width: 20%;
   position: fixed;
   height: 100%;
-  overflow: auto;
+  /*overflow: auto;*/
 }
 
 nav ul {
   list-style-type: none;  
 }
 
-nav a {
+/*nav a {
   display: block;
   padding-bottom: 0.25rem;
-}
+}*/
 
 .menu-toggle {
-  display:none;
+  display: none;
   position: fixed;
   top: 1rem;
   right: 1rem;
@@ -120,11 +120,9 @@ footer {
   width: 100%;
   height: auto;
   display: block;
-  /*margin: 1rem 0;*/
   opacity: 0;
   animation: fadeIn 1s ease forwards;
   overflow-clip-box: content-box;
-  /*overflow: clip;*/
 }
 
 .flyer{
@@ -164,9 +162,9 @@ footer {
 
   }
 
-  main{
+  /*main{
     margin-left: 0;
-  }
+  }*/
 
   .gallery {
 
