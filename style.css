@@ -21,7 +21,7 @@ nav {
   height: 100%;
   padding-right: 2.5rem;
   background-color: honeydew;
-  opacity: 90%;
+  opacity: 80%;
 }
 
 nav ul {
@@ -64,7 +64,6 @@ nav a {
 }
 
 main {
-  /*margin-left: 20%;*/
   overflow-y: auto;
   padding: 2rem;
   max-width: 850px;
@@ -72,6 +71,10 @@ main {
 }
 
 main section {
+  margin-top: 50px;
+}
+
+main article {
   margin-top: 50px;
 }
 
