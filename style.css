@@ -17,17 +17,16 @@ nav {
   width: 20%;
   position: fixed;
   height: 100%;
-  /*overflow: auto;*/
 }
 
 nav ul {
   list-style-type: none;  
 }
 
-/*nav a {
+nav a {
   display: block;
   padding-bottom: 0.25rem;
-}*/
+}
 
 .menu-toggle {
   display: none;
@@ -163,6 +162,7 @@ footer {
   }
 
   main{
+    padding: 1rem;
     margin-left: 0;
   }
 
