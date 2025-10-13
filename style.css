@@ -220,11 +220,17 @@ footer {
 
     top: 80px;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     margin-left: 0;
     z-index: -1; 
   }
+
+.gallery img {
+  /*width:auto;*/
+  height:100%;
+  object-fit: cover;
+}
 
   .video-container {
     z-index: -1;
