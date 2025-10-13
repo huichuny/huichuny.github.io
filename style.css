@@ -83,7 +83,7 @@ path{
     width: 70px;
     height: auto; 
     transform: rotate(180deg);
-    filter: invert(60%) ; 
+    filter: invert(70%) ; 
     padding: 2rem;
 }
 
@@ -170,7 +170,6 @@ footer {
 
 .flyer{
   width: 400px;
-  /*margin-top: 1rem;*/
   margin-bottom: 2rem;
 
 }
