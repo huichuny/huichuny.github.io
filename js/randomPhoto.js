@@ -2,14 +2,15 @@ document.addEventListener("DOMContentLoaded", () => {
     // List of your photo paths
     const photos = [
   "../pics/hp04.png",
-  "../pics/octpp.jpg",
-  "../pics/thesis/the.jpg",
+  "../pics/octpp.JPG",
+  "../pics/bl00.jpg",
   "../pics/tux.png",
   "../pics/bl03.jpg",
   "../pics/bl06.png",
   "../pics/eesf3.jpg",
   "../pics/eesf1.jpg",
-  "../pics/hp03.png"
+  "../pics/hp00.jpg",
+  // "../pics/abs00.jpeg"
     ];
 
    // Get last photo from localStorage
