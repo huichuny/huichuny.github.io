@@ -48,6 +48,12 @@ path{
   fill:honeydew;
 }
 
+.cv{
+  list-style-type: none; 
+  padding-left: 0rem;
+  padding-bottom: 0.25rem;
+}
+
 .menu-toggle {
   display: none;
   position: fixed;
@@ -129,7 +135,7 @@ h2{
 
 h3 {
   margin-top: 2rem;
-  /*font-weight: normal;*/
+  font-weight: normal;
   font-style: italic;
 
 }
