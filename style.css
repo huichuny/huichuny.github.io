@@ -82,7 +82,7 @@ path{
 .lli {
   /*font-weight: bold;*/
   /*color:#393541;*/
-  padding-bottom: 0.25rem;
+  padding-top: 0.3rem;
 
 }
 
@@ -91,8 +91,8 @@ path{
 }
 
 .sli{
-  padding-left:2rem;
-  padding-bottom: 0.25rem;
+  padding-left:1.3rem;
+  padding-top: 0.3rem;
 }
 
 .sli a{
@@ -157,6 +157,10 @@ p {
   line-height: 1.5;
 }
 
+h1{
+  font-weight: normal;
+}
+
 h2{
   font-weight: normal;
   font-style: italic;
@@ -165,7 +169,7 @@ h2{
 h3 {
   margin-top: 2rem;
   font-weight: normal;
-  font-style: italic;
+  /*font-style: italic;*/
 
 }
 
