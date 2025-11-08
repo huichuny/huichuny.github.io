@@ -7,9 +7,13 @@ document.addEventListener("DOMContentLoaded", () => {
   "../pics/tux.png",
   "../pics/bl03.jpg",
   "../pics/bl06.png",
+  "../pics/bl07.png",
   "../pics/eesf3.jpg",
   "../pics/eesf1.jpg",
-  "../pics/hp00.jpg"
+  "../pics/hp00.jpg",
+  "../pics/algo60.JPG",
+  "../pics/algo62.JPG",
+  "../pics/dax04.jpg"
     ];
 
    // Get last photo from localStorage
