@@ -271,10 +271,11 @@ footer {
 }
 
 a {
-  text-decoration: none;
-  /*color: #393541;*/
-  color: honeydew;
-  text-decoration: underline dotted honeydew;
+   color: honeydew;
+  text-decoration-line: underline;        /* underline */
+  text-decoration-style: dotted;          /* dotted */
+  text-decoration-color: honeydew;        /* color */
+
 }
 
   .gallery {
