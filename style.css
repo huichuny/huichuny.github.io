@@ -217,7 +217,7 @@ footer {
 
 .flyer{
   width: 400px;
-  margin-bottom: 2rem;
+  margin: 2rem auto;
 
 }
 
@@ -225,6 +225,7 @@ footer {
 
   nav{
     background-color: transparent;
+    z-index: 8000;
   }
 
   .sidebar {
@@ -293,7 +294,7 @@ a {
 }
 
   .video-container {
-    z-index: -1;
+    z-index: 0;
   }
 }
 
