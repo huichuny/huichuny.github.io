@@ -21,6 +21,11 @@ a:hover {
   background-color: honeydew;
 }
 
+::selection {
+  color: #232027;
+  background: honeydew;
+}
+
 nav {
   /*width: 20%;*/
   position: fixed;
@@ -168,6 +173,7 @@ h2{
 }
 
 h3 {
+  font-size: 1.4rem;
   margin-top: 2rem;
   font-weight: normal;
   /*font-style: italic;*/
