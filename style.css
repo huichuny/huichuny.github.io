@@ -149,6 +149,11 @@ main article {
   margin-top: 50px;
 }
 
+main time {
+  font-weight: bold;
+  
+}
+
 
 main img {
   width: 100%;
